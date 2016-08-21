@@ -1,5 +1,5 @@
-# NakovForwardServer
-TCP port forwarding software, written in Java: forwards local TCP port (e.g. 127.0.0.1:1521) to external port (0.0.0.0:1522). Works as reverse proxy server (like nginx) to tunnel a connection through external port to an internal server+port in a local network.
+# NakovForwardServer (TCP Reverse Proxy)
+<b>TCP port forwarding software</b>, written in Java: forwards local TCP port (e.g. 127.0.0.1:1521) to external network port (e.g. 0.0.0.0:1522). Works as <b>reverse proxy</b> server (like nginx) to tunnel a TCP connection through external port to an internal server+port in a local network.
 
 Nakov TCP Socket Forward Server - freeware
 Version 1.0 - March, 2002
