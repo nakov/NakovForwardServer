@@ -23,7 +23,7 @@ Nakov Forward Server supports failt tolerance. When some of the servers in the l
 
 Nakov Forward Server supports also load balancing features. If load balancing is enabled, when a client connection is accepted, Nakov Forward Server will redirect the client to the least loaded server from the servers list. We consider the server which hast minimal alive connections established by Nakov Forward Server is least loaded.
 
-#What we gain when we use Nakov Proxy Server?
+#Benefits of Using Nakov Forward Server?
 
  - Destination server does not know the real IP of the client. It thinks that the IP of Nakov Forward Server is its client. Thus we can use a server licensed for one IP address on several machines simultaneously.
 
@@ -49,6 +49,10 @@ Nakov Forward Server listening port should be in format:
 
     ListeningPort = some_port (in range 1-65535)
     
+Check alive interval through which all dead threads should be re-checked if they are alive is specified by following line:
+
+    CheckAliveInterval = time_interval (in milliseconds)
+
 Using load balancing algorithm is specified by following line:
 
     LoadBalancing = Yes/No
@@ -60,8 +64,3 @@ Using load balancing algorithm is specified by following line:
 #Running the server
 
     java NakovForwardServer
-
-    
-Check alive interval through which all dead threads should be re-checked if they are alive is specified by following line:
-
-    CheckAliveInterval = time_interval (in milliseconds)
