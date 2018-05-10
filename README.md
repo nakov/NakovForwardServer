@@ -57,10 +57,13 @@ Using load balancing algorithm is specified by following line:
 
     LoadBalancing = Yes/No
     
-#Compilation
+# Compilation
 
     javac *.java
     
-#Running the server
+# Running the server
 
     java NakovForwardServer
+
+# ngrok
+Finally, if ou have more advanced needs, you might find this localhost tunelling software useful: https://ngrok.com
