@@ -23,7 +23,7 @@ Nakov Forward Server supports failt tolerance. When some of the servers in the l
 
 Nakov Forward Server supports also load balancing features. If load balancing is enabled, when a client connection is accepted, Nakov Forward Server will redirect the client to the least loaded server from the servers list. We consider the server which hast minimal alive connections established by Nakov Forward Server is least loaded.
 
-#Benefits of Using Nakov Forward Server?
+# Benefits of Using Nakov Forward Server?
 
  - Destination server does not know the real IP of the client. It thinks that the IP of Nakov Forward Server is its client. Thus we can use a server licensed for one IP address on several machines simultaneously.
 
@@ -35,7 +35,7 @@ Nakov Forward Server supports also load balancing features. If load balancing is
 
  - Load balancing helps to avoid overloading of the servers by distributing the clients between them. Of course this should be done by special hardware called "load balancer", but if we don't have such hardware, we can still use this technology. When we use load balancing, all the servers in the list should be running in a cluster and there should be no matter what of the servers the client is connected to. The servers should communicate each other and replicate their session data.
 
-#Configuration
+# Configuration
 
 <code>NakovForwardServer.properties</code> configuration file contains all the settings of Nakov Forward Server. The only mandatory field is "Servers". Destination servers should be described in following format:
 
@@ -66,4 +66,4 @@ Using load balancing algorithm is specified by following line:
     java NakovForwardServer
 
 # ngrok
-Finally, if ou have more advanced needs, you might find this localhost tunelling software useful: https://ngrok.com
+Finally, if you have more advanced needs, you might find this localhost tunelling software useful: https://ngrok.com
